@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "Level Repulsion in Wildfire Regimes: Fuel as the Reservoir of Isolated Forests"
+message: "If you use this software or data, please cite it as below."
+authors:
+  - family-names: Chen
+    given-names: Ruqing
+    affiliation: "GUT Geoservice Inc., Montreal"
+version: 1.0.0
+date-released: 2026-06-22
+license: MIT
+keywords:
+  - random matrix theory
+  - wildfire
+  - fire return interval
+  - level repulsion
+  - GOE
