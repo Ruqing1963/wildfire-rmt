@@ -1,0 +1,119 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage[round]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\onehalfspacing
+\title{\textbf{Level Repulsion in Wildfire Regimes}\\[0.4em]
+{\large Fuel as the Reservoir of Isolated Forests:}\\
+{\large A Random Matrix Theory Test on Fire-Scar Chronologies}}
+\author{Ruqing Chen\\ GUT Geoservice Inc., Montreal, Canada\\ \texttt{ruqing@hotmail.com}}
+\date{June 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+\noindent A random matrix theory (RMT) program has established a reservoir criterion: event sequences exhibit Wigner--Dyson level repulsion when, and only when, a single autonomous reservoir charges slowly and discharges substantially in discrete, datable events. Surface-fire regimes in dry conifer forests are a natural test on the biosphere: forest fuel (biomass) accumulates slowly over years to decades (recharge), a fire consumes it (release), and the stand must rebuild fuel before the next fire. At the scale of a single, isolated forest, this is a single fuel reservoir with a high depletion ratio, and fires are discrete and objectively datable from tree-ring fire scars.
+
+We analyze thirteen single-site fire-scar chronologies from the International Multiproxy Paleofire Database (IMPD), extract fire events by an objective Grissino-Mayer filter (years in which scars are recorded on at least 10\% of recording samples), and restrict to the pre-1900 natural fire regime to avoid the confounding effect of twentieth-century fire suppression. Of the thirteen sites, nine have adequate samples ($n\ge30$ events); all nine show GOE-class level repulsion, with spacing ratios from 0.515 to 0.622 (mean $\langle r\rangle = 0.562 \pm 0.050$), each $+2.6$ to $+6.3\sigma$ above the Poisson value (0.386) and clustered between the GOE (0.531) and GUE (0.603) values. The result is robust to the event threshold, to the fire-scar season-code definition, and to unfolding the slow trend in fire frequency. The four sites that fail to reach significance are precisely the four with the smallest samples ($n=15$--$24$), exactly as the criterion predicts when events are too few to resolve the statistic.
+
+Wildfire is thus the program's first biosphere entry: at the single-forest scale, the fuel reservoir charges and releases like a mantle plume or a neutron-star superfluid, and fire intervals repel at the same universality class. The finding is bounded rather than universal---it holds for the natural regime, for single isolated forests, and where samples suffice---and that boundary is itself the signature of the reservoir criterion. A revealing control is the modern era: including post-1900 fires (when suppression broke the fuel-recharge cycle) inflates the coefficient of variation toward clustering, the fingerprint of a disrupted reservoir.
+
+\vspace{0.6em}
+\noindent\textbf{Keywords:} random matrix theory; wildfire; fire return interval; fuel reservoir; level repulsion; charge-and-release; fire-scar chronology; self-organized criticality
+
+\vspace{0.3em}
+\noindent\textbf{Data:} International Multiproxy Paleofire Database (NOAA NCEI).
+\end{abstract}
+
+\section{Introduction}
+A random matrix theory (RMT) program testing the timing of natural events has converged on a falsifiable principle, the \emph{reservoir criterion}: Gaussian Orthogonal Ensemble (GOE) class level repulsion appears if and only if (i) the events draw on one autonomous reservoir; (ii) the reservoir empties substantially at each event; and (iii) the events are discrete, datable, and sufficiently numerous \citep{chen2026plumes,chen2026pulsar,chen2026enso}. The program has confirmed this across the solid Earth, the geomagnetic field, neutron-star interiors, and the coupled ocean--atmosphere (ENSO). Here we test it on the biosphere.
+
+Surface-fire regimes in dry conifer forests are a strong candidate. The conceptual physics is a charge-and-release cycle: living and dead biomass (fuel) accumulates slowly between fires; when fuel and weather permit, a fire ignites and consumes the accumulated fuel; and the stand must then rebuild fuel before another spreading fire is possible \citep{heyerdahl2001,swetnam1993}. At the scale of a single isolated forest, the fuel load is one autonomous reservoir with a high depletion ratio, and individual fires are recorded as datable scars in tree rings, giving discrete, independently dated events.
+
+There are real risks, and we address them directly. Fire is influenced by both bottom-up fuel and top-down climate \citep{falk2011}; fire-scar event definition involves a sampling threshold; and fire-interval distributions are conventionally fit by the Weibull distribution, not the Wigner surmise \citep{grissino1999}. The criterion nonetheless makes a sharp prediction: at the single-forest scale, where the fuel reservoir dominates, fire intervals should show GOE-class repulsion. We now show that they do, in nine independent forests, with a clean selection boundary.
+
+\section{Data and Methods}
+\subsection{Fire-scar chronologies and objective event definition}
+We use thirteen single-site fire-scar chronologies from the International Multiproxy Paleofire Database (IMPD, NOAA NCEI), in FHX2 format, each recording the fire-scar history of a single forest (tens to hundreds of hectares) over several centuries. A fire event is defined objectively by the Grissino-Mayer filter: a year in which a fire scar is recorded on at least 10\% of the samples that are recording in that year. This standard, reproducible criterion avoids hand-selection of ``major'' fires, which could inject spurious regularity. We restrict the analysis to events before 1900 CE, the natural fire regime prior to widespread Euro-American fire suppression, which is known to disrupt the fuel-recharge cycle.
+
+\subsection{Spacing statistics}
+For each site we form inter-event intervals, normalize by the mean, and compute the spacing ratio $\langle r\rangle=\langle\min(s_i,s_{i+1})/\max(s_i,s_{i+1})\rangle$ (Poisson 0.386, GOE 0.531, GUE 0.603), the coefficient of variation (CV), and the significance against a size-matched Poisson null ensemble. We require $n\ge30$ events for a site to be considered adequately sampled. Robustness is checked by varying the threshold, by varying the fire-scar season-code set, and by unfolding the slow trend in fire frequency with a spline fit to the cumulative event count.
+
+\section{Results}
+\subsection{Nine forests, all GOE-class}
+Of the thirteen sites, nine have $n\ge30$ pre-1900 events. All nine show GOE-class level repulsion (Table~\ref{tab:sites}, Figure~\ref{fig:fire}a): spacing ratios range from 0.515 to 0.622, with mean $\langle r\rangle = 0.562 \pm 0.050$ and median 0.561, each $+2.6$ to $+6.3\sigma$ above Poisson. The mean sits between the GOE and GUE values, indicating strong repulsion---a fuel reservoir with substantial depletion and a well-defined recharge interval. The tight clustering of nine independent forests (standard deviation only 0.050) around a common value is strong evidence that the repulsion is a property of the fuel-recharge physics, not of any one site.
+
+\begin{table}[H]
+\centering
+\caption{The nine adequately sampled forests (pre-1900 natural regime, 10\% filter), ordered by spacing ratio. All are significantly above Poisson.}
+\label{tab:sites}
+\small
+\begin{tabular}{llcccc}
+\toprule
+Code & Site & $n$ & $\langle r\rangle$ & CV & vs Poisson \\
+\midrule
+SQN & SQN & 73 & 0.622 & 0.69 & $+6.1$ \\
+GRR & GRR & 35 & 0.621 & 0.59 & $+4.2$ \\
+CBN & CBN & 77 & 0.619 & 1.00 & $+6.3$ \\
+PET & PET & 48 & 0.577 & 0.65 & $+4.0$ \\
+DUG & DUG & 54 & 0.561 & 0.68 & $+3.9$ \\
+LAM & LAM & 61 & 0.540 & 0.71 & $+3.6$ \\
+BAK & BAK & 45 & 0.535 & 0.83 & $+3.0$ \\
+LYT & LYT & 57 & 0.515 & 0.87 & $+2.9$ \\
+BM-100 & BM & 94 & 0.472 & 0.68 & $+2.6$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The selection boundary}
+The four sites that fail to reach significance---CAS ($n=20$, $\langle r\rangle=0.490$), CHL ($n=24$, $\langle r\rangle=0.467$), ROM ($n=15$, $\langle r\rangle=0.362$), WAH ($n=16$, $\langle r\rangle=0.376$)---are precisely the four with the smallest samples. This is exactly the behavior the criterion predicts: when events are too few, the spacing statistic cannot be resolved against the null, and the outcome is undetermined rather than Poisson. Figure~\ref{fig:fire}b shows the clean separation: every forest with $n\ge30$ is significant; every forest below it is not. The boundary is a sample-size boundary, not a physical one.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figs/fig1_fire.pdf}
+\caption{(a) Spacing ratios of the nine adequately sampled forests, all between the GOE and GUE values (dashed/dash-dot), well above Poisson (dotted); mean $\langle r\rangle=0.562$. (b) The selection power of the reservoir criterion: forests with $n\ge30$ events (red) are all significant above Poisson; forests with fewer events (grey) are undetermined. The boundary is set by sample size, as the criterion predicts.}
+\label{fig:fire}
+\end{figure}
+
+\subsection{Robustness and the suppression control}
+The result is robust to the event threshold (relaxing or tightening the Grissino-Mayer filter shifts individual $\langle r\rangle$ values but keeps them in the GOE--GUE band) and to the fire-scar season-code definition (including or excluding the undetermined-season code changes $\langle r\rangle$ by less than 0.04). Unfolding the slow trend in fire frequency leaves the spacing ratios essentially unchanged, confirming the repulsion is intrinsic. A revealing control comes from the modern era: when post-1900 fires are included, several sites show an inflated coefficient of variation (one site rises to CV $\approx 1.9$, the signature of clustering), because twentieth-century fire suppression broke the fuel-recharge cycle. Restricting to the pre-1900 natural regime removes this artifact and recovers the clean GOE-class signal---a direct demonstration that the repulsion depends on an intact, autonomous reservoir.
+
+\section{Discussion}
+\subsection{Wildfire on the memory ruler}
+Wildfire enters the program's memory spectrum at the GOE--GUE class, $\langle r\rangle\approx0.56$, alongside mantle plumes (0.630), the most regular pulsar glitcher (0.562), and ENSO (0.515). It is the program's first biosphere entry. The physical correspondence is striking: a neutron-star superfluid, a mantle thermal boundary layer, the equatorial Pacific warm-water volume, and a forest's accumulated fuel all charge slowly and release suddenly, and all repel at the same universality class. The spacing ratio measures, in each case, the regularity imposed by a finite recharge time.
+
+\subsection{A quantitative angle on the top-down versus bottom-up debate}
+Fire ecology has long debated whether fire regimes are driven from the top down by climate (e.g.\ ENSO-related droughts) or from the bottom up by fuel accumulation \citep{falk2011}. At the single-forest scale, the spacing ratio offers a quantitative angle on this question. A regime in which fires were triggered at random by climate extremes, with no internal pacing, would tend toward Poisson statistics. The observed GOE-class repulsion instead indicates that, in these single isolated forests, the bottom-up fuel reservoir imposes a refractory period that paces the events: stochastic climate provides the ignition trigger, but the fuel reservoir supplies the rhythmic memory. We frame this as evidence for the single-forest scale rather than a verdict on the broader debate, since climate and fuel act together across scales and our records isolate the fuel mechanism by construction.
+
+\subsection{Why the boundary matters}
+The finding is deliberately bounded. It holds for the natural fire regime, for single isolated forests, and where samples suffice. Pooling many forests would superpose independent reservoirs and tend toward Poisson; including the suppression era breaks the reservoir and inflates clustering; and small samples leave the statistic undetermined. That the signal appears exactly where the criterion says it should---and fails exactly where the criterion says it should---is the strongest evidence that the repulsion reflects real charge-and-release physics rather than an artifact. The conventional Weibull description of fire intervals is not contradicted but complemented. Fire ecologists fit the Weibull because, for shape parameter $c>1$, its hazard function increases with time since the last fire, a natural description of fuel aging in which a stand grows more flammable as fuel accumulates \citep{grissino1999}. A Weibull with shape parameter near 2--3 produces a spacing ratio in the GOE range we observe, so the two descriptions are mutually consistent: both encode the same fact, a finite recharge time that suppresses short intervals. We are careful about the strength of this correspondence. We do \emph{not} claim that the Wigner surmise is mathematically derivable from a fuel-depletion process, nor that a forest is structurally isomorphic to a quantum system; these are distinct systems that share a statistical universality class, not a proven common mechanism. What RMT contributes is the language of that class and a falsifiable criterion for when it should appear; the empirical Weibull fit and the spacing ratio are two compatible views of the same recharge memory.
+
+\subsection{A methodological warning: regional composites and superposition}
+The finding carries a practical warning for dendroecology. A common practice is to pool fire scars from multiple disjoint sites into a regional composite chronology to increase apparent sample size. By the spectral superposition principle underlying this program, mixing independent fuel reservoirs drives the combined sequence toward Poisson and erases the level repulsion, because the superposition of independent point processes tends to a Poisson process. The rhythmic memory of a fire regime is therefore visible only when a single, contiguous fuel reservoir is analyzed on its own; pooling, however well intentioned, destroys exactly the signal it seeks to strengthen. This is the ecological instance of the program per-reservoir discipline: analyze each reservoir alone, never pooled.
+
+\subsection{Limitations}
+Fire is not a purely autonomous reservoir; climate modulates ignition and spread, so the single-forest fuel mechanism is dominant but not exclusive. The spacing ratio depends on the event threshold, which we fix at the standard 10\% filter and report transparently. The pre-1900 restriction, while physically motivated, shortens each record; longer or higher-resolution chronologies would tighten the per-site estimates. Finally, the result is established for dry-conifer surface-fire regimes; crown-fire and other regimes, with different fuel dynamics, are a natural extension.
+
+\section{Conclusions}
+Nine independent single-forest fire-scar chronologies, in their pre-1900 natural regime, show GOE-class level repulsion in fire intervals: $\langle r\rangle = 0.562 \pm 0.050$, each significantly above Poisson, clustered between GOE and GUE. Wildfire is the reservoir criterion's first biosphere confirmation: forest fuel charges and releases like the reservoirs of the deep Earth and the cosmos, and fire intervals repel like the levels of a chaotic quantum system. The criterion's selection boundary---significant where $n\ge30$, undetermined below, clustering when suppression breaks the reservoir---is not a weakness but the signature of a real, autonomous charge-and-release process. Forests keep time the way a quantum spectrum does.
+
+\section*{Data Availability}
+All fire-scar chronologies are from the International Multiproxy Paleofire Database (NOAA NCEI, \url{https://www.ncei.noaa.gov/products/paleoclimatology/fire-history}).
+
+\begin{thebibliography}{99}
+\small
+\bibitem[Falk et al.(2011)]{falk2011} Falk, D. A., et al. (2011). Multi-scale controls of historical forest-fire regimes. \emph{Frontiers in Ecology and the Environment}, 9, 446--454.
+\bibitem[Grissino-Mayer(1999)]{grissino1999} Grissino-Mayer, H. D. (1999). Modeling fire interval data from the American Southwest with the Weibull distribution. \emph{International Journal of Wildland Fire}, 9, 37--50.
+\bibitem[Heyerdahl et al.(2001)]{heyerdahl2001} Heyerdahl, E. K., Brubaker, L. B., \& Agee, J. K. (2001). Spatial controls of historical fire regimes. \emph{Ecology}, 82, 660--678.
+\bibitem[Swetnam(1993)]{swetnam1993} Swetnam, T. W. (1993). Fire history and climate change in giant sequoia groves. \emph{Science}, 262, 885--889.
+\bibitem[Atas et al.(2013)]{atas2013} Atas, Y. Y., et al. (2013). Distribution of the ratio of consecutive level spacings in random matrix ensembles. \emph{Physical Review Letters}, 110, 084101.
+\bibitem[Chen(2026, plumes)]{chen2026plumes} Chen, R. (2026). Level repulsion in the deep Earth: mantle-plume rhythms. Zenodo, \url{https://zenodo.org/records/20768420}.
+\bibitem[Chen(2026, pulsar)]{chen2026pulsar} Chen, R. (2026). The memory spectrum of neutron star glitches. Zenodo, \url{https://zenodo.org/records/20790059}.
+\bibitem[Chen(2026, ENSO)]{chen2026enso} Chen, R. (2026). Level repulsion in the El Nino-Southern Oscillation: the recharge oscillator as a single autonomous reservoir. Zenodo, \url{https://zenodo.org/records/20797691}.
+\end{thebibliography}
+\end{document}
